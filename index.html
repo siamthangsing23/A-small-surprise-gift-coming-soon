@@ -1,29 +1,151 @@
-<div class="message" id="message">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <img src="small-gift.jpg" alt="A special memory">
+    <title>A Little Gift ❤️</title>
 
-    <p>
-        This little gift is just a reminder of how grateful I am
-        to have you as my best friend.
-    </p>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffd6e0, #fff0f5);
+            text-align: center;
+        }
 
-    <p>
-        Thank you for all the laughter, memories, and beautiful
-        moments we've shared together.
-    </p>
+        .card {
+            background: white;
+            width: 90%;
+            max-width: 450px;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
 
-    <p>
-        No matter where life takes us, I hope our friendship
-        always stays special. ❤️
-    </p>
+        h1 {
+            color: #e75480;
+        }
 
-    <div class="signature">
-        With love,<br>
-        Your Best Friend 💝
+        .subtitle {
+            color: #666;
+            font-size: 17px;
+        }
+
+        .gift {
+            font-size: 90px;
+            cursor: pointer;
+            margin: 20px;
+            transition: 0.3s;
+        }
+
+        .gift:hover {
+            transform: scale(1.15);
+        }
+
+        .hint {
+            color: #e75480;
+            font-weight: bold;
+        }
+
+        #message {
+            display: none;
+            margin-top: 20px;
+        }
+
+        #message img {
+            width: 100%;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        #message p {
+            color: #555;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        .heart {
+            font-size: 25px;
+        }
+
+        button {
+            background: #e75480;
+            color: white;
+            border: none;
+            padding: 12px 22px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="heart">❤️</div>
+
+        <h1>A Little Gift for My Best Friend</h1>
+
+        <p class="subtitle">
+            This little website is just for you. 😊
+        </p>
+
+        <div class="gift" onclick="openGift()">
+            🎁
+        </div>
+
+        <div class="hint">
+            Touch Me Baby 💕
+        </div>
+
+        <div id="message">
+
+            <img src="small-gift.jpg" alt="A special memory">
+
+            <p>
+                This little gift is just a reminder of how grateful
+                I am to have you as my best friend.
+            </p>
+
+            <p>
+                Thank you for all the laughter, memories, and beautiful
+                moments we've shared together.
+            </p>
+
+            <p>
+                No matter where life takes us, I hope our friendship
+                always stays special. ❤️
+            </p>
+
+            <p>
+                With love,<br>
+                Your Best Friend 💝
+            </p>
+
+            <button onclick="closeGift()">
+                Close Gift 💕
+            </button>
+
+        </div>
+
     </div>
 
-    <button onclick="closeGift()">
-        Close Gift 💕
-    </button>
+    <script>
+        function openGift() {
+            document.getElementById("message").style.display = "block";
+        }
 
-</div>
+        function closeGift() {
+            document.getElementById("message").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
