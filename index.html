@@ -1,123 +1,29 @@
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Little Gift for My Best Friend ❤️</title>
+<div class="message" id="message">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #ffd6e7, #fff0f5);
-            text-align: center;
-            color: #444;
-        }
+    <img src="small-gift.jpg" alt="A special memory">
 
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 30px;
-        }
-
-        h1 {
-            color: #e75480;
-            font-size: 36px;
-        }
-
-        .subtitle {
-            font-size: 20px;
-            margin-bottom: 25px;
-        }
-
-        img {
-            width: 280px;
-            max-width: 90%;
-            border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-            margin-bottom: 25px;
-        }
-
-        button {
-            background: #e75480;
-            color: white;
-            border: none;
-            padding: 16px 35px;
-            font-size: 20px;
-            border-radius: 30px;
-            cursor: pointer;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-
-        button:hover {
-            transform: scale(1.05);
-        }
-
-        #message {
-            display: none;
-            margin-top: 30px;
-            font-size: 22px;
-            line-height: 1.6;
-        }
-
-        .heart {
-            font-size: 35px;
-        }
-    </style>
-</head>
-
-<body>
-
-<div class="container">
-
-    <div class="heart">❤️</div>
-
-    <h1>A Little Gift for My Best Friend</h1>
-
-    <p class="subtitle">
-        This little website is just for you. 😊
+    <p>
+        This little gift is just a reminder of how grateful I am
+        to have you as my best friend.
     </p>
 
-    <img src="baby.jpg" alt="A special memory">
+    <p>
+        Thank you for all the laughter, memories, and beautiful
+        moments we've shared together.
+    </p>
 
-    <br>
+    <p>
+        No matter where life takes us, I hope our friendship
+        always stays special. ❤️
+    </p>
 
-    <button onclick="showMessage()">
-        Touch Me Baby 💕
-    </button>
-
-    <div id="message">
-        <p>
-            To my amazing best friend ❤️
-        </p>
-
-        <p>
-            You are one of the most special people in my life.
-            I hope this little gift reminds you how much you mean to me.
-        </p>
-
-        <p>
-            May your day be filled with happiness, peace and beautiful moments.
-        </p>
-
-        <h2>Have a Blessed Sunday 🙏❤️</h2>
-
-        <p>
-            With lots of love,
-            <br>
-            Your Best Friend ❤️
-        </p>
+    <div class="signature">
+        With love,<br>
+        Your Best Friend 💝
     </div>
 
+    <button onclick="closeGift()">
+        Close Gift 💕
+    </button>
+
 </div>
-
-<script>
-function showMessage() {
-    document.getElementById("message").style.display = "block";
-}
-</script>
-
-</body>
-</html>
-```
